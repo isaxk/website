@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about
 ---
 I'm Isaac, a casual programmer who likes making simple, fun and cool websites and mini-games.
 
