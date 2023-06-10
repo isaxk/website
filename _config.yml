@@ -1,0 +1,13 @@
+title: isaacboor
+tagline: casual programmer
+author.name: Isaac Boorman
+author.url: https://www.isaacboor.me
+icon: /assets/favicon.png
+future: true
+
+plugins:
+- jekyll-paginate
+
+paginate: 3
+
+paginate_path: "/:num/"

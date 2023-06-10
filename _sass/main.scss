@@ -1,0 +1,234 @@
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Global Variables
+$sans-serif-family: "Raleway", -apple-system-font, Helvetica, Arial, sans-serif;
+$main-body-width: 500px;
+
+// Light Colors
+$light-background: #f9f5f5;
+$light-text-color: #000000;
+$light-text-accent-color: #808080;
+$light-border-color: #dadada;
+
+// Dark Colors
+$dark-background: #101010;
+$dark-text-color: #ffffff;
+$dark-text-accent-color: #aeaeae;
+$dark-border-color: #212121;
+
+
+
+@mixin darkMode {
+    @media(prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    font-family: $sans-serif-family;
+
+    background-color: $light-background;
+    color: $light-text-color;
+
+    @include darkMode {
+
+        background-color: $dark-background;
+        color: $dark-text-color;
+
+    }
+
+}
+
+
+.main-section {
+
+    width: $main-body-width;
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 100%;
+    margin: 0px auto;
+
+}
+
+.header {
+
+    margin: 5px 0px 80px 0px;
+    padding: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+
+    border-bottom: 2px solid $light-border-color;
+
+    @include darkMode {
+        border-color: $dark-border-color;
+    }
+
+    .profile-pic-container {
+
+        .profile-pic {
+            box-sizing: border-box;
+            border-radius: 50px;
+            width: 50px;
+            border: 2px solid $light-border-color;
+
+            @include darkMode {
+                border-color: $dark-border-color;
+            }
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $light-text-color;
+
+        @include darkMode {
+            color: $dark-text-color;
+        }
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+
+
+    }
+
+    .tagline {
+        font-family: 200;
+        font-size: 13px;
+        color: $light-text-accent-color;
+
+        @include darkMode {
+            color: $dark-text-accent-color;
+        }
+    }
+
+    .links {
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            margin: 5px;
+            color: $light-text-color;
+
+            @include darkMode {
+                color: $dark-text-color;
+            }
+        }
+    }
+}
+
+.about-snippet {
+    margin: 50px 0px;
+}
+
+.home-sub {
+    font-size: 18px;
+}
+
+.posts {
+    margin: 0px 0px 50px 0px;
+
+    .post {
+        margin: 40px 0px;
+        padding: 0px 0px 20px 0px;
+        border-bottom: 1px solid $light-border-color;
+
+        @include darkMode {
+            border-color: $dark-border-color;
+        }
+
+        .title {
+            font-size: 17px;
+            text-decoration: none;
+            color: $light-text-color;
+
+            @include darkMode {
+                color: $dark-text-color;
+            }
+        }
+
+        .desc {
+            font-size: 13px;
+            color: $light-text-accent-color;
+
+            @include darkMode {
+                color: $dark-text-accent-color;
+            }
+        }
+
+        .date {
+            font-size: 13px;
+            text-align: right;
+
+        }
+    }
+}
+
+.pagination {
+    margin: 0px auto;
+    width: max-content;
+
+    .inactive,
+    .page-number {
+        color: $light-text-accent-color;
+
+        @include darkMode {
+            color: $dark-text-accent-color;
+        }
+    }
+
+    .inactive {
+        font-weight: 100;
+    }
+
+    a.next,
+    a.previous {
+        color: $light-text-color;
+
+        @include darkMode {
+            color: $dark-text-color;
+        }
+    }
+
+    .next,
+    .previous,
+    .page-number {
+        margin: 0px 20px 0px 0px;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+.footer {
+    height: 100px;
+    flex-shrink: 0;
+    display: grid;
+    align-content: center;
+    color: $light-text-accent-color;
+
+    @include darkMode {
+        color: $dark-text-accent-color;
+    }
+}
+
+.page-title {
+    margin-bottom: 50px;
+}

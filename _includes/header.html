@@ -1,20 +1,21 @@
-<header class="masthead">
-  <div class="masthead-title">
-    <a href="{{ '/' | relative_url }}" title="Home">{{ site.title }}</a>
-    <small class="tagline">{{ site.tagline }}</small>
-  </div>
+<div class="header">
+    <div class="profile-pic-container">
+        <a href="/"><img src="{{site.icon}}" alt="Site Icon" class="profile-pic"></a>
+    </div>
+    <a href="/">
+        <div class="titletag">
+            <div class="title">{{site.title}}
 
-  {% if site.data.navigation %}
-    <nav class="nav">
-      <ul class="nav-list">
-      {% for item in site.data.navigation %}
-        <li class="nav-item">
-          <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}current{% endif %}">
-            {{ item.title }}
-          </a>
-        </li>
-      {% endfor %}
-      </ul>
-    </nav>
-  {% endif %}
-</header>
+            </div>
+            <div class="tagline">{{site.tagline}}</div>
+
+        </div>
+    </a>
+    <div class="links">
+        <a href="/about">About</a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+</div>
