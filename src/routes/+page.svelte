@@ -32,8 +32,8 @@
 						<a href="https:/github.com/isaxk" class="logo">
 							<i class="fa-brands fa-github" />
 						</a>
-						<a href="#" class="logo">
-							<i class="fa-brands fa-youtube" />
+						<a href="https://twitter.com/isaxk_b" class="logo">
+							<i class="fa-brands fa-x-twitter" />
 						</a>
 					</div>
 				</div>
