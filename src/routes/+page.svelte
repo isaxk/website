@@ -15,37 +15,45 @@
 </script>
 
 <div class="main-container">
-    {#if ready}
-	<div class="hero">
-		<div class="left">
-			<img in:fly={{delay:1100,duration:800,y:50}} src="/profilepicture.jpg" alt="" />
-		</div>
-		<div class="right">
-			<div in:fly={{delay:900,duration:800,y:50}} class="titles">
-				<h1>Hi, I'm Isaac</h1>
-				<div class="social-links">
-					<a href="#" class="logo">
-						<i class="fa-brands fa-github" />
-					</a>
-					<a href="#" class="logo">
-						<i class="fa-brands fa-youtube" />
-					</a>
-				</div>
+	{#if ready}
+		<div class="hero">
+			<div class="left">
+                <img
+					in:fly={{ delay: 900, duration: 900, y: 30 }}
+					src="/profilepicture.jpg"
+					alt=""
+				/>
 			</div>
-			<div in:fly={{delay:1000,duration:800,y:50}} class="bio">Casual programmer / web developer</div>
-			<div in:fly={{delay:1200,duration:800,y:50}} class="projects">
-				<div class="item label">Projects:</div>
-				{#each projects as project}
-					<div class="item">
-						<a href={project.href}>
-							{project.name}
+			<div class="right">
+                
+				<div in:fly={{ delay: 500, duration: 900, y: 30 }} class="titles">
+					<h1>isaxk (Isaac)</h1>
+					<div class="social-links">
+						<a href="#" class="logo">
+							<i class="fa-brands fa-github" />
+						</a>
+						<a href="#" class="logo">
+							<i class="fa-brands fa-youtube" />
 						</a>
 					</div>
-				{/each}
+				</div>
+				<div in:fly={{ delay: 900, duration: 900, y: 30 }} class="bio">
+					Casual programmer / web developer
+				</div>
 			</div>
 		</div>
-	</div>
-    {/if}
+		<div in:fly={{ delay: 1200, duration: 900, y: 30 }} class="projects">
+			<div class="item label">Projects:</div>
+			<br />
+			{#each projects as project}
+				<div class="item">
+					<a href={project.href}>
+						{project.name}
+					</a>
+				</div>
+			{/each}
+		</div>
+	{/if}
 </div>
 
 <style lang="scss">
@@ -55,17 +63,18 @@
 	}
 	.hero {
 		display: grid;
-		grid-template-columns: 2.1fr 4fr;
-		gap: 2.5rem;
+		align-items: center;
+		grid-template-columns: 1.2fr 4fr;
+		gap: 2rem;
 	}
 	.hero img {
 		width: 100%;
-		max-width: 250px;
+		max-width: 200px;
 		border-radius: 100%;
 	}
 	.left {
 		display: grid;
-		align-items: center;
+		padding-top: 30px;
 	}
 	.titles {
 		display: grid;
@@ -81,6 +90,7 @@
 		font-size: 20px;
 		padding: 15px 0px;
 		box-sizing: border-box;
+		width: 100%;
 	}
 	.projects .item {
 		display: inline-block;
@@ -97,4 +107,18 @@
 	.projects a:hover {
 		text-decoration: underline;
 	}
+    .social-links a {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 470px) {
+        .titles h1 {
+            font-size: 1.4em;
+        }
+        .right .bio {
+            font-size: 0.8em;
+        }
+        .projects {
+            font-size: 15px;
+        }
+    }
 </style>
