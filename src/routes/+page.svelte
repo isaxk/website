@@ -6,7 +6,7 @@
 	import { fly, slide, fade } from "svelte/transition";
 	const projects = [
 		{ name: "Flags", href: "https://flags.isaxk.com" },
-		{ name: "WeirdText", href: "https://weirdtext.isaacboor.me" },
+		{ name: "WeirdText", href: "https://weirdtext.isaxk.com" },
 		{
 			name: "Since this page loaded...",
 			href: "https://isaxk.github.io/sincethispageloaded",
@@ -18,14 +18,13 @@
 	{#if ready}
 		<div class="hero">
 			<div class="left">
-                <img
+				<img
 					in:fly={{ delay: 900, duration: 900, y: 30 }}
 					src="/profilepicture.jpg"
 					alt=""
 				/>
 			</div>
 			<div class="right">
-                
 				<div in:fly={{ delay: 500, duration: 900, y: 30 }} class="titles">
 					<h1>isaxk (Isaac)</h1>
 					<div class="social-links">
@@ -107,18 +106,18 @@
 	.projects a:hover {
 		text-decoration: underline;
 	}
-    .social-links a {
-        font-size: 20px;
-    }
-    @media screen and (max-width: 470px) {
-        .titles h1 {
-            font-size: 1.4em;
-        }
-        .right .bio {
-            font-size: 0.8em;
-        }
-        .projects {
-            font-size: 15px;
-        }
-    }
+	.social-links a {
+		font-size: 20px;
+	}
+	@media screen and (max-width: 470px) {
+		.titles h1 {
+			font-size: 1.4em;
+		}
+		.right .bio {
+			font-size: 0.8em;
+		}
+		.projects {
+			font-size: 15px;
+		}
+	}
 </style>
