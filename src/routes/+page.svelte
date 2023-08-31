@@ -28,7 +28,7 @@
 				<div in:fly={{ delay: 500, duration: 900, y: 30 }} class="titles">
 					<h1>isaxk (Isaac)</h1>
 					<div class="social-links">
-						<a href="https:/github.com/isaxk" class="logo">
+						<a href="https://github.com/isaxk" class="logo">
 							<i class="fa-brands fa-github" />
 						</a>
 						<a href="https://twitter.com/isaxk_b" class="logo">
