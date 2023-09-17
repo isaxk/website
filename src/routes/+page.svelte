@@ -6,7 +6,7 @@
 	import { fly, slide, fade } from "svelte/transition";
 	const projects = [
 		{ name: "QuickFlags", href: "https://flags.isaxk.com" },
-		{ name: "WeirdText", href: "https://weirdtext.isaxk.com" },
+		{ name: "WeirdText", href: "https://weirdtext.vercel.app" },
 		{
 			name: "Since this page loaded...",
 			href: "https://isaxk.github.io/sincethispageloaded",
