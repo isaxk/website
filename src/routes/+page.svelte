@@ -5,7 +5,7 @@
 	onMount(() => (ready = true));
 	import { fly, slide, fade } from "svelte/transition";
 	const projects = [
-		{ name: "Flags", href: "https://flags.isaxk.com" },
+		{ name: "QuickFlags", href: "https://flags.isaxk.com" },
 		{ name: "WeirdText", href: "https://weirdtext.isaxk.com" },
 		{
 			name: "Since this page loaded...",
@@ -14,18 +14,14 @@
 	];
 </script>
 
-<div class="main-container">
-	{#if ready}
+{#if ready}
+	<div class="main-container" in:fly={{ delay: 900, duration: 900, y: 30 }}>
 		<div class="hero">
 			<div class="left">
-				<img
-					in:fly={{ delay: 900, duration: 900, y: 30 }}
-					src="/profilepicture.jpg"
-					alt=""
-				/>
+				<img src="/profilepicture.jpg" alt="" />
 			</div>
 			<div class="right">
-				<div in:fly={{ delay: 500, duration: 900, y: 30 }} class="titles">
+				<div class="titles">
 					<h1>isaxk (Isaac)</h1>
 					<div class="social-links">
 						<a href="https://github.com/isaxk" class="logo">
@@ -36,12 +32,10 @@
 						</a>
 					</div>
 				</div>
-				<div in:fly={{ delay: 900, duration: 900, y: 30 }} class="bio">
-					Casual programmer / web developer
-				</div>
+				<div class="bio">Casual programmer / web developer</div>
 			</div>
 		</div>
-		<div in:fly={{ delay: 1200, duration: 900, y: 30 }} class="projects">
+		<div class="projects">
 			<div class="item label">Projects:</div>
 			<br />
 			{#each projects as project}
@@ -52,8 +46,8 @@
 				</div>
 			{/each}
 		</div>
-	{/if}
-</div>
+	</div>
+{/if}
 
 <style lang="scss">
 	.main-container {
