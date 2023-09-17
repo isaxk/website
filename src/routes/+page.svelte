@@ -15,7 +15,7 @@
 </script>
 
 {#if ready}
-	<div class="main-container" in:fly={{ delay: 900, duration: 900, y: 30 }}>
+	<div class="main-container" in:fly={{ delay: 300, duration: 900, y: 30 }}>
 		<div class="hero">
 			<div class="left">
 				<img src="/profilepicture.jpg" alt="" />
