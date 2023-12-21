@@ -1,117 +1,12 @@
-<script>
-	import { onMount } from "svelte";
+<svelte:head><title>Home - isaxk.com</title></svelte:head>
 
-	let ready = false;
-	onMount(() => (ready = true));
-	import { fly, slide, fade } from "svelte/transition";
-	const projects = [
-		{ name: "QuickFlags", href: "https://flags.isaxk.com" },
-		{ name: "WeirdText", href: "https://weirdtext.vercel.app" },
-		{
-			name: "Since this page loaded...",
-			href: "https://isaxk.github.io/sincethispageloaded",
-		},
-	];
-</script>
+<h1>Welcome</h1>
+<p>Hi, welcome to my website! This is where I keep all of my random silly projects and games I've made over the years. Take a look around!<br><a href="/about">More...</a></p>
 
-{#if ready}
-	<div class="main-container" in:fly={{ delay: 300, duration: 900, y: 30 }}>
-		<div class="hero">
-			<div class="left">
-				<img src="/profilepicture.jpg" alt="" />
-			</div>
-			<div class="right">
-				<div class="titles">
-					<h1>isaxk (Isaac)</h1>
-					<div class="social-links">
-						<a href="https://github.com/isaxk" class="logo">
-							<i class="fa-brands fa-github" />
-						</a>
-						<a href="https://twitter.com/isaxk_b" class="logo">
-							<i class="fa-brands fa-x-twitter" />
-						</a>
-					</div>
-				</div>
-				<div class="bio">Casual programmer / web developer</div>
-			</div>
-		</div>
-		<div class="projects">
-			<div class="item label">Projects:</div>
-			<br />
-			{#each projects as project}
-				<div class="item">
-					<a href={project.href}>
-						{project.name}
-					</a>
-				</div>
-			{/each}
-		</div>
-	</div>
-{/if}
+<h2>Featured Projects:</h2>
+<ul>
+	<li><a href="https://flags.isaxk.com">QuickFlags</a></li>
+	<li><a href="https://weirdtext.vercel.app">WeirdText</a></li>
+</ul>
+<a href="/projects">All projects</a>
 
-<style lang="scss">
-	.main-container {
-		width: 100%;
-		height: 500px;
-	}
-	.hero {
-		display: grid;
-		align-items: center;
-		grid-template-columns: 1.2fr 4fr;
-		gap: 2rem;
-	}
-	.hero img {
-		width: 100%;
-		max-width: 200px;
-		border-radius: 100%;
-	}
-	.left {
-		display: grid;
-		padding-top: 30px;
-	}
-	.titles {
-		display: grid;
-		grid-template-columns: 1fr max-content;
-		align-items: center;
-	}
-	.logo {
-		font-size: 35px;
-		margin-right: 10px;
-		color: white;
-	}
-	.projects {
-		font-size: 20px;
-		padding: 15px 0px;
-		box-sizing: border-box;
-		width: 100%;
-	}
-	.projects .item {
-		display: inline-block;
-		padding: 20px 20px 0px 0px;
-		text-overflow: ellipsis;
-	}
-	.projects .item.label {
-		font-weight: 600;
-	}
-	.projects a {
-		color: rgb(188, 188, 255);
-		text-decoration: none;
-	}
-	.projects a:hover {
-		text-decoration: underline;
-	}
-	.social-links a {
-		font-size: 20px;
-	}
-	@media screen and (max-width: 470px) {
-		.titles h1 {
-			font-size: 1.4em;
-		}
-		.right .bio {
-			font-size: 0.8em;
-		}
-		.projects {
-			font-size: 15px;
-		}
-	}
-</style>

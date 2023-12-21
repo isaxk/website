@@ -1,8 +1,27 @@
 <script>
-    import "../lib/main.scss";
+	import Sidebar from "$lib/components/Sidebar.svelte";
+	import "$lib/main.scss";
+	import SidebarLink from "$lib/components/SidebarLink.svelte";
+
+	import { fly } from "svelte/transition";
+
+	export let data;
 </script>
 
-<svelte:head><title>isaxk (Isaac) - Casual Programmer / Web Developer</title></svelte:head>
+<svelte:head><title>isaxk.com</title></svelte:head>
 <main>
-    <slot />
+	<Sidebar>
+		<SidebarLink href="/">Home</SidebarLink>
+		<SidebarLink href="/about">About</SidebarLink>
+		<SidebarLink href="/projects">Projects</SidebarLink>
+	</Sidebar>
+	{#key data.url}
+		<div
+			class="page-content"
+			in:fly={{ x: -100, duration: 300, delay: 300 }}
+			out:fly={{ x: 100, duration: 300 }}
+		>
+			<slot />
+		</div>
+	{/key}
 </main>
