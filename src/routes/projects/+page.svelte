@@ -17,7 +17,7 @@
 
 
 <h2>WeirdText</h2>
-<a href="https://flags.isaxk.com">flags.isaxk.com</a>
+<a href="https://weirdtext.isaxk.com">weirdtext.isaxk.com</a>
 <p>WeirdText is a GUI implementation of a modified version of the lunicode.js library. It makes your inputed text come out in strange ways. Built with SvelteKit.</p>
 <style>
 	h2 {
