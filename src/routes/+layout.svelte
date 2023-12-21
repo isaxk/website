@@ -10,11 +10,13 @@
 
 <svelte:head><title>isaxk.com</title></svelte:head>
 <main>
-	<Sidebar>
-		<SidebarLink href="/">Home</SidebarLink>
-		<SidebarLink href="/about">About</SidebarLink>
-		<SidebarLink href="/projects">Projects</SidebarLink>
-	</Sidebar>
+	{#key data.url}
+		<Sidebar>
+			<SidebarLink href="/">Home</SidebarLink>
+			<SidebarLink href="/about">About</SidebarLink>
+			<SidebarLink href="/projects">Projects</SidebarLink>
+		</Sidebar>
+	{/key}
 	{#key data.url}
 		<div
 			class="page-content"

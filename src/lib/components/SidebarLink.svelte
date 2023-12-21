@@ -14,7 +14,7 @@
 		display: grid;
 		grid-template-columns: max-content 1fr;
 		align-items: center;
-		transition: 0.3s ease-in-out;
+		transition: 0.1s ease-in-out;
 	}
 	@media screen and (max-width: 680px) {
 		.links {
@@ -35,7 +35,7 @@
 	}
 	.hover-arrow {
 		opacity: 0;
-		transition: 0.6s ease-in-out;
+		transition: 0.4s ease-in-out;
 		transform: translateX(-8px);
 	}
 	.sidebarlink:hover {
