@@ -6,7 +6,7 @@
 <h2>Featured Projects:</h2>
 <ul>
 	<li><a href="https://flags.isaxk.com">QuickFlags</a></li>
-	<li><a href="https://weirdtext.vercel.app">WeirdText</a></li>
+	<li><a href="https://weirdtext.isaxk.com">WeirdText</a></li>
 </ul>
 <a href="/projects">All projects</a>
 
