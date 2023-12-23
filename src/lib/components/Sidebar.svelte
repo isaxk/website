@@ -10,7 +10,7 @@
 		<div class="social">
 			<div class="github">
 				<a href="https://github.com/isaxk"
-					><i class="fa-brands fa-github"></i></a
+					><i class="fa-brands fa-github" title="GitHub"></i></a
 				>
 			</div>
 		</div>
