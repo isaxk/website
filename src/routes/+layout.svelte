@@ -3,13 +3,25 @@
 	import "$lib/main.scss";
 	import SidebarLink from "$lib/components/SidebarLink.svelte";
 
-	import { fly } from "svelte/transition";
+	import { fly, fade } from "svelte/transition";
+	import { onMount } from "svelte";
+
+	let ready = false;
+	
+	onMount(()=>{
+		window.setTimeout(()=>{
+			ready = true
+		}, 100)
+		
+	})
 
 	export let data;
 </script>
 
 <svelte:head><title>isaxk.com</title></svelte:head>
-<main>
+
+{#if ready}
+<main in:fade={{ duration:800, delay: 50 }}>
 	{#key data.url}
 		<Sidebar>
 			<SidebarLink href="/">Home</SidebarLink>
@@ -27,3 +39,4 @@
 		</div>
 	{/key}
 </main>
+{/if}
