@@ -1,10 +1,12 @@
 <script>
 	export let href = "#";
+	export let icon = "fa-solid fa-link";
 </script>
 
 <div class="links">
 	<div class="sidebarlink">
 		<div class="hover-arrow">&gt;</div>
+		<i class={icon}></i>
 		<a {href}><slot /></a>
 	</div>
 </div>
@@ -12,7 +14,7 @@
 <style>
 	.sidebarlink {
 		display: grid;
-		grid-template-columns: max-content 1fr;
+		grid-template-columns: max-content 0.1fr 1fr;
 		align-items: center;
 		transition: 0.1s ease-in-out;
 	}
@@ -30,6 +32,9 @@
 		display: block;
 		transition: 0.1s;
 	}
+	i {
+		margin-left: 10px;
+	}
 	.sidebarlink:hover a {
 		color: white;
 	}
@@ -45,5 +50,9 @@
 		opacity: 1;
 		margin-right: 2px;
 		transform: translateX(0px);
+	}
+	i {
+		text-align: center;
+		align-content: center;
 	}
 </style>

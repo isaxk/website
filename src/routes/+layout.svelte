@@ -24,9 +24,9 @@
 <main in:fade={{ duration:800, delay: 50 }}>
 	{#key data.url}
 		<Sidebar>
-			<SidebarLink href="/">Home</SidebarLink>
-			<SidebarLink href="/about">About</SidebarLink>
-			<SidebarLink href="/projects">Projects</SidebarLink>
+			<SidebarLink href="/" icon="fa-solid fa-house">Home</SidebarLink>
+			<SidebarLink href="/about" icon="fa-solid fa-user">About</SidebarLink>
+			<SidebarLink href="/projects" icon="fa-solid fa-screwdriver-wrench">Projects</SidebarLink>
 		</Sidebar>
 	{/key}
 	{#key data.url}
