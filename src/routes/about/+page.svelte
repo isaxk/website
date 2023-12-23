@@ -1,4 +1,6 @@
 <svelte:head><title>About - isaxk.com</title></svelte:head>
 
-<h2>About</h2>
-<p>Hi, welcome to my website! This is where I keep all of my random silly projects and games I've made over the years. Take a look around!</p>
+<h1>About</h1>
+<p>Hey I'm Isaac, a casual programmer who makes a few cool projects from time to time. This website is just a place for me to keep my projects.</p>
+
+<p>I specialise in front-end web development, mostly with the front-end framework SvelteKit. I also have minor experience with Firebase backends.</p>
