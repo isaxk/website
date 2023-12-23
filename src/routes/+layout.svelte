@@ -41,6 +41,7 @@
 			padding: 10px 10px 10px 0px;
 			border: #ffffffd1 0px solid;
 			border-bottom-width: 2px;
+			height: max-content;
 		}
 	}
 </style>
