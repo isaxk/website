@@ -1,37 +1,28 @@
-<div class="sidebar-container">
-	<nav class="sidebar">
-		<div class="profile">
-			<div class="img-container">
-				<img src="/profilepicture.jpg" alt="Profile" />
-			</div>
-			<div class="text">
-				<div class="name">Isaac <span class="username">(isaxk)</span></div>
-				<div class="bio">Casual Programmer</div>
-			</div>
-			<div class="social">
-				<div class="github"><a href="https://github.com/isaxk"><i class="fa-brands fa-github"></i></a></div>
+<nav class="sidebar">
+	<div class="profile">
+		<div class="img-container">
+			<img src="/profilepicture.jpg" alt="Profile" />
+		</div>
+		<div class="text">
+			<div class="name">Isaac <span class="username">(isaxk)</span></div>
+			<div class="bio">Casual Programmer</div>
+		</div>
+		<div class="social">
+			<div class="github">
+				<a href="https://github.com/isaxk"
+					><i class="fa-brands fa-github"></i></a
+				>
 			</div>
 		</div>
-		<div class="links">
-			<slot />
-		</div>
-	</nav>
-</div>
+	</div>
+	<div class="links">
+		<slot />
+	</div>
+</nav>
 
 <style lang="scss">
-	.sidebar-container {
-		padding: 100px 10px 30px 0px;
-        height: max-content;
-	}
-    .sidebar {
-        padding-bottom: 30px;
-    }
-	@media screen and (max-width: 850px) {
-		.sidebar-container {
-			padding: 10px 10px 10px 0px;
-			border: #ffffffd1 0px solid;
-			border-bottom-width: 2px;
-		}
+	.sidebar {
+		padding-bottom: 30px;
 	}
 
 	.social {
