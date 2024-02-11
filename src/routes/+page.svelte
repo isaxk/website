@@ -2,6 +2,10 @@
 	import Hero from "$lib/components/Hero.svelte";
 </script>
 
+<svelte:head>
+    <title>isaxk.com</title>
+</svelte:head>
+
 <main>
 	<div class="hero-container">
 		<Hero />
