@@ -61,7 +61,7 @@
 	}
     @media screen and (max-width: 530px) {
         .hero-container {
-            height: 480px;
+            height: 550px;
         }
     }
 
