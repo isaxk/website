@@ -59,6 +59,11 @@
 		padding: 40px 20px;
 		box-sizing: border-box;
 	}
+    @media screen and (max-width: 530px) {
+        .hero-container {
+            height: 480px;
+        }
+    }
 
 	.content {
 		max-width: 600px;
