@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="profile-picture">
-            <img src="/profilepicture.jpg" alt="profile">
+            <img src="/profilepicture.jpg" alt="profile" title="My cat (Boe)">
         </div>
     </div>
 

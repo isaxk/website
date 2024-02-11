@@ -38,10 +38,10 @@
 		max-height: 600px;
 		display: grid;
 		place-items: center;
-		background-image: linear-gradient(-45deg, #32324a, #294253, #20204f);
+		background-image: linear-gradient(-45deg, #191929, #13222d, #131339);
 		background-attachment: fixed;
 		background-size: 400% 400%;
-		animation: AnimatedBg 30s ease infinite;
+		animation: AnimatedBg 20s ease infinite;
 	}
 
 	@keyframes AnimatedBg {
