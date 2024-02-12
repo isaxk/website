@@ -1,12 +1,15 @@
-<script>
+<script lang="ts">
 	import Hero from "$lib/components/Hero.svelte";
+    import { fade } from "svelte/transition";
+
 </script>
 
 <svelte:head>
-    <title>isaxk.com</title>
+	<title>isaxk.com</title>
 </svelte:head>
 
 <main>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div class="hero-container">
 		<Hero />
 	</div>
@@ -32,6 +35,17 @@
 </main>
 
 <style>
+    .blob {
+  filter: blur(40px);
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #c7c7c714;
+	pointer-events:none;
+}
 	.hero-container {
 		height: 60vh;
 		min-height: 400px;
@@ -63,11 +77,11 @@
 		padding: 40px 20px;
 		box-sizing: border-box;
 	}
-    @media screen and (max-width: 530px) {
-        .hero-container {
-            height: 550px;
-        }
-    }
+	@media screen and (max-width: 530px) {
+		.hero-container {
+			height: 550px;
+		}
+	}
 
 	.content {
 		max-width: 600px;
