@@ -21,6 +21,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>isaxk - Projects</title>
+</svelte:head>
+
 <h1>Projects</h1>
 
 <div class="projects-grid">

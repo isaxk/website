@@ -26,7 +26,12 @@
     main {
         max-width: 700px;
         margin: auto;
-        padding: 80px 20px 0px 20px;
+        padding: 80px 20px;
         box-sizing: border-box;
     }
+	@media screen and (max-width: 530px) {
+		main {
+			padding-top: 40px;
+		}
+	}
 </style>

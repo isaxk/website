@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>isaxk.com</title>
+	<title>isaxk - Casual Web Developer</title>
 </svelte:head>
 
 <div class="hero-container">
@@ -20,9 +20,9 @@
 	}
 
 	
-	@media screen and (max-width: 530px) {
+	/* @media screen and (max-width: 530px) {
 		.hero-container {
 			height: 550px;
 		}
-	}
+	} */
 </style>
