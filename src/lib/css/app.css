@@ -26,14 +26,43 @@ body {
     background-size: cover;
     min-height: 100%;
 }
+
 @keyframes AnimatedBg {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #121212 !important;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8888888e;
+    border-radius: 10px;
+    width: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
