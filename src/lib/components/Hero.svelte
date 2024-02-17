@@ -27,9 +27,7 @@
 
 <style>
     .hero {
-        max-width: 640px;
         width: 100%;
-        padding: 0px 20px;
         box-sizing: border-box;
     }
     .top-row {
