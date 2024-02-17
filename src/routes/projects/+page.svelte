@@ -15,7 +15,7 @@
         {
 			name: "Since this page loaded",
 			description: "Counts what has happenned around the world.",
-			link: "https://isaxk.github.io/sincethispageloaded",
+			link: "https://sincethispageloaded.isaxk.com",
             background: "/sincethispageloaded.png",
 		},
 	];
