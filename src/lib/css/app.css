@@ -16,7 +16,7 @@ body {
 html {
     background-color: #181b20;
     height: 100%;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 
@@ -25,7 +25,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     min-height: 100%;
-    overflow-y: scroll;
 }
 @keyframes AnimatedBg {
     0% {
