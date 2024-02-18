@@ -13,7 +13,7 @@
 
 <style>
 	.hero-container {
-		min-height: 30vh;
+		min-height: 50vh;
 		display: grid;
 		place-items: center;
 		
