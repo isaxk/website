@@ -1,16 +1,22 @@
 <script lang="ts">
     const projects = [
         {
-            name: "WeirdText",
-            description: "Changes your text in wierd and interesting ways",
-            link: "https://weirdtext.isaxk.com",
-            background: "/WeirdText.jpeg",
+            name: "FocusTune",
+            description: "The desktop client for streaming focus music radios with no distractions",
+            link: "https://focustune.isaxk.com",
+            background: "/focustune.png",
         },
         {
             name: "QuickFlags",
             description: "The fast paced flag naming game",
             link: "https://flags.isaxk.com",
             background: "/QuickFlags.jpeg",
+        },
+        {
+            name: "WeirdText",
+            description: "Changes your text in wierd and interesting ways",
+            link: "https://weirdtext.isaxk.com",
+            background: "/WeirdText.jpeg",
         },
         {
             name: "Since this page loaded",
