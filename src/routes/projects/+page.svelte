@@ -65,7 +65,7 @@
         background-size: 100%;
         background-position: center top;
         height: 200px;
-        transition: 0.2s ease-in-out;
+        transition: 0.5s;
     }
     .project:hover {
         background-size: 105%;
