@@ -12,7 +12,7 @@
             <div class="title">
                 I'm Isaac <div class="light">(@isaxk)</div>
             </div>
-            <div class="bio">Casual Web Developer</div>
+            <div class="bio">Casual Web/Game Dev</div>
             <div class="socials">
                 <SocialIcon icon="github" href="https://github.com/isaxk"/>
                 <SocialIcon icon="discord" href="https://discordapp.com/users/988006561442041886"/>
