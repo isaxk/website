@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>isaxk - Casual Web Developer</title>
+	<title>isaxk - Casual Web/Game Dev</title>
 </svelte:head>
 
 <div class="hero-container">
