@@ -5,6 +5,8 @@
 
 <h1>About</h1>
 
-<p>Hi, I'm Isaac. A casual web developer who makes simple projects from time to time.</p>
+<p>Hi, I'm Isaac. A casual web/game developer who makes simple websites and games sometimes.</p>
 
-<p>My languages and frameworks of choice are Svelte, SvelteKit, HTML, CSS, JavaScript+TypeScript.</p>
+<p>On the web, I build my projects using Svelte(Kit) with Typescript.</p>
+
+<p>For gamedev, I use the Godot engine.</p>

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Hero from "$lib/components/Hero.svelte";
+	import About from "./about/+page.svelte"
+	import Projects from "./projects/+page.svelte"
 	import { fade } from "svelte/transition";
 </script>
 
@@ -11,9 +13,10 @@
 	<Hero />
 </div>
 
+
 <style>
 	.hero-container {
-		min-height: 50vh;
+		min-height: 60vh;
 		display: grid;
 		place-items: center;
 		

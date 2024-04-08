@@ -1,6 +1,12 @@
 <script lang="ts">
     const projects = [
         {
+            name: "S.S.P.Q Assessment",
+            description: "Analog Horror Game",
+            link: "https://isaxkb.itch.io/sspq",
+            background: "/sspq.png",
+        },
+        {
             name: "QuickFlags",
             description: "The fast paced flag naming game",
             link: "https://flags.isaxk.com",
