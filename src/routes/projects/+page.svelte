@@ -1,12 +1,6 @@
 <script lang="ts">
     const projects = [
         {
-            name: "FocusTune",
-            description: "The desktop client for streaming focus music radios with no distractions",
-            link: "https://focustune.isaxk.com",
-            background: "/focustune.png",
-        },
-        {
             name: "QuickFlags",
             description: "The fast paced flag naming game",
             link: "https://flags.isaxk.com",

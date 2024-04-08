@@ -15,6 +15,7 @@
             <div class="bio">Casual Web/Game Dev</div>
             <div class="socials">
                 <SocialIcon icon="github" href="https://github.com/isaxk"/>
+                <SocialIcon icon="itch" href="https://isaxkb.itch.io"/>
                 <SocialIcon icon="discord" href="https://discordapp.com/users/988006561442041886"/>
             </div>
         </div>
