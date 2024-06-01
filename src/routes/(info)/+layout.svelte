@@ -1,3 +1,3 @@
-<div class="text-3xl font-bold my"><slot name="title" /></div>
+<div class="my-8"></div>
 
 <slot />

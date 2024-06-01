@@ -12,6 +12,9 @@ export default {
             gridTemplateColumns: {
                 featuredProject: "100px 1fr max-content",
             },
+            translate: {
+                tick: "1.5px",
+            },
         },
     },
     plugins: [],

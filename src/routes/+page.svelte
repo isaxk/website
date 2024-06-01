@@ -10,12 +10,13 @@
     import { projects } from "$lib/data/projects";
     import FeaturedProject from "$lib/components/FeaturedProject.svelte";
     import MoreLink from "$lib/components/MoreLink.svelte";
-    import { onMount } from "svelte";
+    import { onDestroy, onMount } from "svelte";
     import { fade } from "svelte/transition";
 
     let mounted: boolean = false;
 
     onMount(() => (mounted = true));
+    onDestroy(() => (mounted = false));
 </script>
 
 <div class="flex flex-col w-full pt-0 gap-5">
@@ -28,8 +29,8 @@
         >
             <Panel title="About me">
                 <div class="">
-                    I'm Isaac, a casual web developer who makes some simple
-                    projects from time-to-time
+                    I'm Isaac, a casual developer who makes some simple projects
+                    from time-to-time
                 </div>
                 <MoreLink href="/about">More about me</MoreLink>
             </Panel>
