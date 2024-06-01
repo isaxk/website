@@ -1,101 +1,45 @@
 <script lang="ts">
     import { page } from "$app/stores";
-
-    import { crossfade, slide } from "svelte/transition";
+    import { crossfade } from "svelte/transition";
 
     const [send, receive] = crossfade({
         duration: 300,
     });
 
-    const [sendMenu, receiveMenu] = crossfade({
-        duration: 300,
-    });
-
-    const menuItems = [
+    let navItems = [
         {
-            text: "Home",
+            name: "Home",
             href: "/",
         },
         {
-            text: "About",
+            name: "About",
             href: "/about",
         },
         {
-            text: "Projects",
+            name: "Projects",
             href: "/projects",
         },
     ];
 </script>
 
-<header>
-    <nav>
-        {#each menuItems as item}
-            <div class="item">
-                {#if $page.url.pathname === item.href}
-                    <a href={item.href} class="active-page">{item.text}</a>
-                {:else}
-                    <a href={item.href}>{item.text}</a>
-                {/if}
-
-                {#if $page.url.pathname === item.href}
+<div class="flex justify-center w-full fixed top-0 left-0 backdrop-blur-xl">
+    <div class="flex gap-2 p-5 text-gray-400">
+        {#each navItems as item}
+            <div>
+                <a
+                    href={item.href}
+                    class="transition-[color] py-2 px-2 duration-300 hover:text-gray-300"
+                    class:text-white={$page.url.pathname == item.href}
+                    >{item.name}</a
+                >
+                {#if $page.url.pathname == item.href}
                     <div
-                        class="underline"
                         in:receive={{ key: "menu" }}
                         out:send={{ key: "menu" }}
+                        class="border-b-2 border-gray-300 h-2"
                     ></div>
-                    <!-- 				{:else}
-					<div
-						class="no-underline"
-						in:receive={{ key: "menu" }}
-						out:send={{ key: "menu" }}
-					></div> -->
                 {/if}
             </div>
         {/each}
-    </nav>
-</header>
-
-<style>
-    header {
-        position: sticky;
-        top: 0;
-        max-width: 600px;
-        margin: auto;
-    }
-    nav {
-        width: max-content;
-        margin: auto;
-        padding: 10px 0 0 0;
-        box-sizing: border-box;
-    }
-    nav .item {
-        display: inline-block;
-        padding: 10px 5px;
-        height: 20px;
-        border-bottom: 3px solid #ffffff12;
-    }
-    nav a {
-        display: block;
-        color: #d3d3d3ea;
-        text-decoration: none;
-        margin: 0px 5px;
-        transition: 0.5s;
-        padding-bottom: 5px;
-        border-bottom-width: 2px;
-        border: transparent 2px solid;
-        border-radius: 2px;
-    }
-    nav a:hover {
-        transition: 0.5s;
-        color: #fffffff3;
-    }
-    nav a.active-page {
-        color: white;
-    }
-    .underline {
-        background-color: #d3d3d3;
-        margin-top: 0px;
-        height: 2px;
-        border-radius: 5px;
-    }
-</style>
+    </div>
+</div>
