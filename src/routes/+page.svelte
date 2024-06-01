@@ -19,6 +19,10 @@
     onDestroy(() => (mounted = false));
 </script>
 
+<svelte:head>
+    <title>isaxk - Casual Web Dev</title>
+</svelte:head>
+
 <div class="flex flex-col w-full pt-0 gap-5">
     {#if mounted}
         <HomeHeader {...userInfo} {socials} />

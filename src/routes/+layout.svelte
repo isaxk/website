@@ -6,8 +6,6 @@
     export let data: { url: string };
 </script>
 
-<svelte:head></svelte:head>
-
 <NavBar />
 {#key data.url}
     <main

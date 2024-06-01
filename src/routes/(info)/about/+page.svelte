@@ -2,6 +2,10 @@
     import Skills from "$lib/components/Skills.svelte";
 </script>
 
+<svelte:head>
+    <title>isaxk - About</title>
+</svelte:head>
+
 <div class="max-w-screen-sm m-auto">
     <h1 class="text-3xl font-bold mt-20 mb-3">About</h1>
     <div class="w-full border-b-2 border-gray-800 mb-5"></div>
