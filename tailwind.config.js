@@ -15,6 +15,9 @@ export default {
             translate: {
                 tick: "1.5px",
             },
+            gap: {
+                tick: "1.5px",
+            },
         },
     },
     plugins: [],

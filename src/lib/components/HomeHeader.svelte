@@ -8,6 +8,7 @@
     import TypeIn from "./TypeIn.svelte";
 
     export let name: string;
+    export let username: string;
     export let bio: string;
     export let picture: string;
 
@@ -26,8 +27,15 @@
         <div class="text-4xl font-light text-gray-300">
             Hi, I'm <span class="font-semibold text-gray-200">{name}</span>
         </div>
-        <div class="flex gap-3 items-center">
-            <div class="text-md text-gray-400">{bio}</div>
+        <div class="flex gap-2 items-center text-md text-gray-400">
+            <div class="flex gap-tick">
+                <div class="-translate-y-tick">@</div>
+                <div class="">
+                    {username}
+                </div>
+            </div>
+            <div class="bg-gray-400 rounded-full w-1 h-1"></div>
+            <div class="">{bio}</div>
             <div class="bg-gray-400 rounded-full w-1 h-1"></div>
             <div class="flex gap-2 text-gray-400">
                 {#each socials as item, i}

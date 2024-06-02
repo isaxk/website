@@ -7,8 +7,7 @@
 </svelte:head>
 
 <div class="max-w-screen-sm m-auto">
-    <h1 class="text-3xl font-bold mt-20 mb-3">About</h1>
-    <div class="w-full border-b-2 border-gray-800 mb-5"></div>
+    <h3>About me</h3>
     <p>
         Hi, I'm Isaac a casual developer who makes some simple projects from
         time to time.
@@ -18,7 +17,7 @@
         and some game dev with Godot and Unity (but never completed a
         substantial project)
     </p>
-    <h3>Skills:</h3>
+    <h3>Skills</h3>
     <Skills
         skills={[
             {
@@ -70,7 +69,7 @@
         @apply mt-2 mb-5;
     }
     h3 {
-        @apply text-2xl font-semibold mt-8 mb-2;
+        @apply text-2xl font-semibold mt-8 mb-4  border-b-2 border-gray-800 pb-2;
     }
     ul {
         @apply list-disc mx-5 mt-2 mb-5;

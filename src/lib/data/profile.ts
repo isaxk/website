@@ -3,6 +3,7 @@ import { DiscordSolid, GithubSolid } from "flowbite-svelte-icons";
 
 export const userInfo = {
     name: "Isaac",
+    username: "isaxk",
     bio: "Casual Web Developer",
     picture: Picture,
 };
