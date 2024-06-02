@@ -24,7 +24,7 @@ export const projects = [
         description: "Distraction-free desktop app for study radios.",
         screenshot: FocusTuneSS,
         href: "https://focustune.isaxk.com",
-        featured: true,
+        featured: false,
     },
     {
         name: "WeirdText",
