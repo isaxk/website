@@ -16,7 +16,7 @@ export const socials = [
     },
     {
         name: "Discord",
-        href: "https://github.com/isaxk",
+        href: "https://discord.com/users/988006561442041886",
         icon: DiscordSolid,
     },
 ];

@@ -7,7 +7,10 @@
     export let screenshot: string;
 </script>
 
-<a class="grid grid-cols-featuredProject items-center py-2 gap-2 h-20" {href}>
+<a
+    class="grid grid-cols-featuredProject items-center p-2 rounded-md gap-2 transition-colors hover:bg-gray-600 hover:bg-opacity-25"
+    {href}
+>
     <div class="rounded-md">
         <img
             src={screenshot}
@@ -23,4 +26,4 @@
         <AngleRightOutline />
     </div>
 </a>
-<div class="border-b-2 border-gray-800 last:border-none"></div>
+<div class="border-b-2 border-gray-900 last:border-none"></div>

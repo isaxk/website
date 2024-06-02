@@ -16,8 +16,10 @@
         <div class="mb-auto">
             <slot />
         </div>
-        <footer class="flex p-10 text-gray-400">
-            <div class="flex-grow">Copyright &copy isaxk.com</div>
+        <footer class="flex justify-center gap-3 p-10 text-gray-400">
+            <div class="sm:flex-grow">
+                <span class="hidden sm:inline">Copyright</span> &copy isaxk.com
+            </div>
             <a
                 href="https://github.com/isaxk/website"
                 class="underline hover:text-gray-300">View Source Code</a
