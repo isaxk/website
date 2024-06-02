@@ -22,7 +22,9 @@
     ];
 </script>
 
-<div class="flex justify-center w-full fixed top-0 left-0 backdrop-blur-xl">
+<div
+    class="flex z-10 justify-center w-full fixed top-0 left-0 backdrop-blur-xl"
+>
     <div class="flex gap-2 p-5 text-gray-400">
         {#each navItems as item}
             <div>

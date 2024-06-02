@@ -1,5 +1,5 @@
 <script lang="ts">
-    import GalleryProject from "$lib/components/GalleryProject.svelte";
+    import GalleryProject from "./Project.svelte";
     import { projects } from "$lib/data/projects";
 </script>
 

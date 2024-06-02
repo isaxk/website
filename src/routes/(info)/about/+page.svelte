@@ -1,5 +1,6 @@
 <script>
-    import Skills from "$lib/components/Skills.svelte";
+    import Skills from "./Skills.svelte";
+    import Table from "./Table.svelte";
 </script>
 
 <svelte:head>
@@ -62,6 +63,27 @@
             },
         ]}
     />
+    <h3>Stuff I use</h3>
+    <Table
+        table={[
+            {
+                left: "Coding Machine",
+                right: "Macbook Air 2020 (M1)",
+            },
+            {
+                left: "Code Editor",
+                right: "Zed",
+            },
+            {
+                left: "Browser",
+                right: "Arc",
+            },
+            {
+                left: "Hosting",
+                right: "Cloudflare Pages",
+            },
+        ]}
+    />
 </div>
 
 <style lang="postcss">
@@ -73,5 +95,14 @@
     }
     ul {
         @apply list-disc mx-5 mt-2 mb-5;
+    }
+    ul li {
+        @apply mb-1;
+    }
+    .table {
+        @apply w-full;
+    }
+    .table div {
+        @apply flex justify-stretch w-full;
     }
 </style>
