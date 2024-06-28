@@ -27,7 +27,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 min-h-52">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 min-h-52">
 				<Card
 					i={0}
 					title="Flasha"
