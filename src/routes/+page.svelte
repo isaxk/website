@@ -32,7 +32,7 @@
 					i={0}
 					title="Flasha"
 					description="Simple flashcard app"
-					href="https://flasha.pages.dev"
+					href="https://flasha.isaxk.com"
 				/>
 				<Card
 					i={1}
